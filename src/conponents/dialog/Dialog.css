@@ -1,0 +1,83 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+.dialog-header{
+	border: 3px solid black;
+	margin-left: 10px;
+	margin-bottom: 10px;
+	margin-right: 10px;
+
+}
+.dialog-main{
+	margin-top: 15px;
+	display: grid;
+	grid-template-areas:
+	'n m'
+	'nn mm'
+	'nnn mmm';
+	grid-gap: 20px;
+	line-height: 40px;
+
+
+}
+
+.dialog-main-names{
+	margin-left: 30px;
+	border-right: 3px solid black;
+	padding-right:50px;
+	padding: 1px;
+
+}
+.name1{
+	grid-area: n;
+}
+.name2{
+	grid-area: nn;
+}
+.name3{
+	grid-area: nnn;
+}
+.messages1{
+	grid-area: m;
+	border: 2px solid black;
+	border-radius: 10px;
+	padding-left: 10px;
+	background-color: gray;
+}
+.messages2{
+	grid-area: mm;
+	border: 2px solid black;
+	border-radius: 10px;
+	padding-left: 10px;
+	background-color: gray;
+}
+.messages3{
+	grid-area: mmm;
+	border: 2px solid black;
+	border-radius: 10px;
+	padding-left: 10px;
+	background-color: gray;
+}
+.inputs{
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+
+}
+.inputs input{
+	width: 250px;
+	height: 30px;
+	border: 2px solid black;
+	text-decoration: none;
+	text-align: center;
+}
+.btn{
+	text-decoration: none;
+	border: 2px solid black;
+	width: 50px;
+	height: 25px;
+	margin-top: 5px;
+}
